@@ -7,13 +7,18 @@ namespace OOPS_Practice_Problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose 1.JSONInventoryDataManagement");
+            InventoryManagementMain inventoryMain = new InventoryManagementMain();
+            Console.WriteLine("Choose 1.JSONInventoryDataManagement\n 2.Inventory Manager\n");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)
             {
                 case 1:
-                    InventoryManagementMain inventoryMain = new InventoryManagementMain();
-                    inventoryMain.DisplayData(@"D:\my git\OOP-Practice-Problems\OOPS Practice Problems\JSON Inventory Management\Inventory.json");
+                    inventoryMain.ReadData(@"D:\my git\OOP-Practice-Problems\OOPS Practice Problems\JSON Inventory Management\Inventory.json");
+                    break;
+                case 2:
+                    inventoryMain.ReadData(@"D:\my git\OOP-Practice-Problems\OOPS Practice Problems\JSON Inventory Management\Inventory.json");
+                    Console.WriteLine("Enter Rice or Wheat or Pulses ");
+                    inventoryMain.Display(Console.ReadLine());
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
