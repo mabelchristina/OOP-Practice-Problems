@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Name": "Amazon",
+    "NumberOfShares": 1,
+    "Price": 2000
+  },
+  {
+    "Name": "TCS",
+    "NumberOfShares": 2,
+    "Price": 2050
+  },
+  {
+    "Name": "Wipro",
+    "NumberOfShares": 3,
+    "Price": 1500
+  }
+]
